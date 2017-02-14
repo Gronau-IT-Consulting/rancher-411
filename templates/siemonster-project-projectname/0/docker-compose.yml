@@ -292,7 +292,7 @@ services:
     build: https://github.com/siemonster/project-free.git#master:containers/411
     stdin_open: true
     links:
-    - es-client-2:es-client
+    - es-client-1:es-client
     - gmailrelay
     - alerta
     hostname: 411.${SITE_DNAME}
