@@ -25,7 +25,7 @@ services:
     labels:
       io.rancher.container.pull_image: always
       io.rancher.sidekicks: msa-volume
-      io.rancher.scheduler.affinity:host_label: kraken=1
+      io.rancher.scheduler.affinity:host_label: makara=1
    
 
   msa-volume:
@@ -38,7 +38,7 @@ services:
     labels:
       io.rancher.container.pull_image: always
       io.rancher.container.start_once: 'true'
-      io.rancher.scheduler.affinity:host_label: kraken=1
+      io.rancher.scheduler.affinity:host_label: makara=1
   
   admin:
     image: ikuturso/msa-free
@@ -387,7 +387,7 @@ services:
     labels:
       io.rancher.container.pull_image: always
       io.rancher.container.hostname_override: container_name
-      io.rancher.scheduler.affinity:host_label: proteus=1
+      io.rancher.scheduler.affinity:host_label: makara=1
     tty: true
     stdin_open: true
     volumes:
