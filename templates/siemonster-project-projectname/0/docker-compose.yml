@@ -348,7 +348,7 @@ services:
       -Des.node.name="node-ikuturso"
       -Des.cluster.name="siemonster"
       -Des.discovery.zen.minimum_master_nodes=2
-      -Des.discovery.zen.ping.unicast.hosts="es-data-node1,es-data-node2"
+      -Des.discovery.zen.ping.unicast.hosts="10.20.40.8"
       -Des.index.number_of_shards=1
       -Des.index.refresh_interval=10s
       -Des.index.translog.flush_threshold=20000
