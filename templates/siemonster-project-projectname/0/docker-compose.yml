@@ -50,6 +50,7 @@ services:
     labels:
       io.rancher.container.pull_image: always
       io.rancher.container.hostname_override: container_name
+      io.rancher.scheduler.affinity:host_label: makara=1
 
   heaven-backend:
     image: extremeprog/heaven
@@ -284,6 +285,7 @@ services:
       io.rancher.container.start_once: 'true'
       io.rancher.container.pull_image: always
       io.rancher.scheduler.global: 'true'
+      io.rancher.scheduler.affinity:host_label: makara=1
 
   '411':
     labels:
@@ -361,6 +363,7 @@ services:
       -Des.action.disable_delete_all_indices=true
       -Des.node.data=false
     hostname: ikuturso
+    network_mode: host
     labels:
       io.rancher.scheduler.affinity:host_label: proteus=1
 
