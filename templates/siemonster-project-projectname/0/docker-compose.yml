@@ -293,7 +293,6 @@ services:
     stdin_open: true
     links:
     - es-client-1:es-client
-    - gmailrelay
     - alerta
     hostname: 411.${SITE_DNAME}
 
